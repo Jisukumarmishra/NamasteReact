@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  justify-content: space-between; /*for logo comes left sodes and and ul - li thing comes right sides  */
+  border: 2px solid black;
+}
+
+.logo {
+  width:150px
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+
+}
+
+.nav-items >ul>li {
+  margin: 20px;
+  padding: 20px;
+}
+
+.res-card {
+  margin: 5px;
+  width: 175px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* 🔑 Golden Rules (remember this)
+
+Spacing between items → gap
+
+Avoid extra right space → don’t use margin-right
+
+Layout → prefer grid over flex for cards
+
+Overflow fix → box-sizing: border-box */
+
+
+.res-Container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.res-Container > a {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+.res-card:hover {
+  cursor: pointer;
+   border: 1px solid black;
+}
+
+
+.search {
+  padding: 10px;
+}
+
+.res-logo {
+  margin: 4px;
+  padding-right: 50px;
+  width: 168px;
+
+}
+.card {
+  text-align: center;
+   margin-top: 1px;
+   margin-right: 10px;
+   margin-bottom: -2px;
+}
+
+.filter-btn {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.shimmer-container {
+  display: flex;
+}
+
+.shimmer-card {
+  margin: 20px;
+  width:200px;
+  height:400px;
+  background-color: rgb(216, 231, 216);
+}
+.login {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  height: 5px;
+}
+.filter{
+  display: flex;
+  color: blue;
+}
+.User-card {
+  padding: 10px;
+  border:1px solid black;
+}
+
+/* @talwind base;
+@talwind components;
+@talwind utilities; */
