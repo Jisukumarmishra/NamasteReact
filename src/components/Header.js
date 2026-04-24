@@ -7,7 +7,7 @@ import {useSelector} from "react-redux";
 
 const Header = () => {
 
-  const[btnNameReact,setBtnNameReact] = useState("Login");
+  const [btnNameReact, setBtnNameReact] = useState("Login");
   // console.log("Header Rendered");
   
   const {loggedInUser} =useContext(userContext)
@@ -39,18 +39,15 @@ const Header = () => {
           <li><a href = "/About">About</a></li> 
           <li><Link to ="/contact">Contact</Link></li>
           <li><Link to ="/Grocery">Grocery_Mode</Link></li>
-          <li className="px-4 font-bold text-xl">Cart ( {cartItems.length} items)</li>
+          <li className="px-4 font-bold text-xl">
+          <Link to ="/cart">Cart({cartItems.length} items)</Link>
+          </li>
           <button
-          className = "login"
+          className="cursor-pointer"
           onClick={() => {
-            btnNameReact === "Login"
-            ? setBtnNameReact("Logout")
-            : setBtnNameReact("Login")
-          }
-            
-          }
-          
-          >Log in</button>
+            setBtnNameReact(btnNameReact === "Login" ? "Logout" : "Login");
+          }}
+          >{btnNameReact}</button>
           <li className="px-4 font-bold">{loggedInUser}</li>
         </ul>
       </div>

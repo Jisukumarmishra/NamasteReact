@@ -50,3 +50,8 @@ Server side rounting :- old vesion of rounting , Each page request goes to the s
 - Slice (CartSlicce)
 - dispatch(action)
 - Selector
+
+# Types of testing (deceloper)
+- Unit testing
+- Integration Testing
+- End to End Testing (e2e testing) 

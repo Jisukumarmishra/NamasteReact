@@ -56,7 +56,7 @@ if (onlineStaus === false) return (
     <div className ="body" >
      <div className="filter">
       <div className="search">
-        <input type="text" className="border border-solid border-black p-2 w-64 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" value={searchText} onChange={(e)=>{
+        <input type="text" data-testid ="searchInput" className="border border-solid border-black p-2 w-64 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" value={searchText} onChange={(e)=>{
           setSearchText(e.target.value);
         }}/>
         <button className ="px-4 py-2 bg-green-500 text-white rounded-md ml-2 hover:bg-green-600"

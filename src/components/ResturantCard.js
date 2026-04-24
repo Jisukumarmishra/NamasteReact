@@ -4,6 +4,7 @@ import userContext from "../utils/userContext";
 
 const ResturantCard = (props) => {
   const { resData } = props;
+  console.log(props);
   
   const {loggedInUser} = useContext(userContext)
 
@@ -23,7 +24,7 @@ const ResturantCard = (props) => {
   } = info;
 
   return (
-    <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
+    <div data-testid = "resCard" className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img
         className="rounded-lg"
         alt="rest-logo"
